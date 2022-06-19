@@ -8660,6 +8660,11 @@
                 "glogg": "^1.0.0"
             }
         },
+        "hamt_plus": {
+            "version": "1.0.2",
+            "resolved": "https://registry.npmjs.org/hamt_plus/-/hamt_plus-1.0.2.tgz",
+            "integrity": "sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA=="
+        },
         "handlebars": {
             "version": "4.7.7",
             "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-4.7.7.tgz",
@@ -14523,6 +14528,14 @@
             "dev": true,
             "requires": {
                 "resolve": "^1.1.6"
+            }
+        },
+        "recoil": {
+            "version": "0.7.3",
+            "resolved": "https://registry.npmjs.org/recoil/-/recoil-0.7.3.tgz",
+            "integrity": "sha512-WaPppk3Hz5/V9nOVmu1X/o3cJyf/rLXw/YsEENvMzEDk+LKqMiGfFgZ3Gg51TKWccpCZCyrSBXn2O4L1E2WDPQ==",
+            "requires": {
+                "hamt_plus": "1.0.2"
             }
         },
         "redent": {

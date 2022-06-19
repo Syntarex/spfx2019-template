@@ -1,36 +1,26 @@
-# SPFx 2019 Template
+## spfx-2019-template
 
-## Verwenden der Projektvorlage
-Um die Projektvorlage zu verwenden, muss das Repository geklont und anschließend neu initialisiert werden.
+This is where you include your WebPart documentation.
 
-##### Klonen
-```
-$ git clone git@github.com:Syntarex/spfx2019-template.git
-```
+### Building the code
 
-##### Neu initialisieren
-```
-$ rm -f -r .git
-$ git init
+```bash
+git clone the repo
+npm i
+npm i -g gulp
+gulp
 ```
 
-## VSCode Extensions
+This package produces the following:
 
-### EditorConfig for VS Code
-Ermöglicht die Konfiguration des VSCode Editors über die Konfigurationsdatei `.editorconfig`.
-[Mehr Informationen](https://editorconfig.org/)
+* lib/* - intermediate-stage commonjs build artifacts
+* dist/* - the bundled script, along with other resources
+* deploy/* - all resources which should be uploaded to a CDN.
 
-### ESLint
-Ermöglicht das Anzeigen von Linting-Fehlern im Editor von VSCode.
-Bietet außerdem Quick-Fixes für verschiedene Linting-Fehler an.
-[Mehr Informationen](https://eslint.org/)
+### Build options
 
-### npm Intellisense
-Ermöglicht npm-spezifische Autovervollständigung im VSCode Editor.
-
-### Path Intellisense
-Ermöglicht Autovervollständigung von Datei-Pfaden im VSCode Editor.
-
-### Prettier
-Ermöglicht das automatische Korrigieren von Linting-Fehlern.
-Die Korrektur des Codes erfolgt nach den eingestellten ESLint Regeln.
+gulp clean - TODO
+gulp test - TODO
+gulp serve - TODO
+gulp bundle - TODO
+gulp package-solution - TODO

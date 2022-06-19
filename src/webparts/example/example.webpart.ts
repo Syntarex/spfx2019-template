@@ -1,15 +1,9 @@
-import { Version } from "@microsoft/sp-core-library";
-import {
-    BaseClientSideWebPart,
-    IPropertyPaneConfiguration,
-    PropertyPaneTextField,
-} from "@microsoft/sp-webpart-base";
+import { BaseClientSideWebPart, IPropertyPaneConfiguration, PropertyPaneTextField } from "@microsoft/sp-webpart-base";
 import * as React from "react";
-import * as ReactDom from "react-dom";
+import * as ReactDOM from "react-dom";
 
 import * as strings from "ExampleWebPartStrings";
-import Example from "./components/Example";
-import { IExampleProps } from "./components/IExampleProps";
+import HelloWorld from "./components/hello-world/hello-world.component";
 
 export interface IExampleWebPartProps {
     description: string;
@@ -17,22 +11,15 @@ export interface IExampleWebPartProps {
 
 export default class ExampleWebPart extends BaseClientSideWebPart<IExampleWebPartProps> {
     public render(): void {
-        const element: React.ReactElement<IExampleProps> = React.createElement(
-            Example,
-            {
-                description: this.properties.description,
-            }
-        );
+        const element: React.ReactElement = React.createElement(HelloWorld, {
+            text: this.properties.description,
+        });
 
-        ReactDom.render(element, this.domElement);
+        ReactDOM.render(element, this.domElement);
     }
 
     protected onDispose(): void {
-        ReactDom.unmountComponentAtNode(this.domElement);
-    }
-
-    protected get dataVersion(): Version {
-        return Version.parse("1.0");
+        ReactDOM.unmountComponentAtNode(this.domElement);
     }
 
     protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {

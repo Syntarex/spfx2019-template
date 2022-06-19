@@ -13,7 +13,7 @@ Die unter `/.editorconfig` gesetzten Einstellungen werden von der VSCode Erweite
 **Einstellungen zur Entwicklungsumgebung VSCode können unter `/.vscode/settings.json` gemacht werden.**
 
 Diese Vorlage setzt die VSCode Erweiterung "Prettier" (`esbenp.prettier-vscode`) als Standard-Formattierer für den Editor ein.
-Bedeutet, dass Prettier beim Speichern den eigenen Code gegen alle festgelegten [Prettier-Regeln](TODO: LINK ZU Prettier-Einstellungen) prüft und gefundene Abweichungen automatisch behebt.
+Bedeutet, dass Prettier beim Speichern den eigenen Code gegen alle festgelegten Prettier-Regeln prüft und gefundene Abweichungen automatisch behebt.
 
 ```
     "editor.formatOnSave": true,
@@ -40,3 +40,32 @@ In der `./package.json` können allgemeine Projektinformationen sowie Abhängigk
 
 Diese Projektvorlage synchronisiert die Versionsnummer der SharePoint-Lösung stets mit der hier hinterlegten Versionsnummer.
 So muss diese nicht an zwei Stellen gepflegt werden.
+
+## Lösung konfigurieren
+
+**Das gesamtheitliche Lösungspaket wird unter `/config/config.json` konfiguriert.**
+
+Hier können unter anderem folgende Einstellungen gemacht werden:
+
+-   Verwalten von WebParts und Extensions die dem Lösungspaket hinzugefügt werden
+-   Referenzierung von verwendeten Lokalisierungs-Dateien
+
+## Build-Prozess der Lösung konfigurieren
+
+**Die Build-Prozess der gesamtheitlichen Lösung kann unter `/config/package-solution.json` konfiguriert werden.**
+
+-   `includeClientSideAssets`: Gibt Aussage darüber, ob Assets (z. B. Bilder oder CSS-Dateien) mit ihm Lösungspaket abgelegt werden sollen. Empfehlung: `true`
+-   `skipFeatureDeployment`: Gibt Aussage darüber, ob ein Admin das Lösungspaket global bereitstellen darf. Ist diese Option auf `false` gesetzt, muss die Lösung in jeder Site Collection manuell hinzugefügt werden um nutzbar zu sein.
+
+_Bitte hier nicht die Versionsnummer der Lösung. Möchtest du diese ändern, nutze bitte das Versionsfeld in der `/package.json`._
+
+## WebPart/Extension konfigurieren
+
+**Jede Extension bzw. jeder WebPart hat ein eigenes Manifest über welches er konfiguriert werden kann. Das Manifest es Beispiels-WebParts dieser Projektvorlage befindet sich unter `/src/webparts/example/example.manifest.json`.**
+
+Hier können unter anderem folgende Einstellungen gemacht werden:
+
+-   Name und Beschreibung des WebParts
+-   Icon des WebParts im WebPart-Selector in SharePoint
+-   Berechtigungen für externe APIs (z. B. Microsoft Graph)
+-   Konfiguration der WebPart-Properties

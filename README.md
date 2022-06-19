@@ -1,5 +1,12 @@
 # SPFx 2019 Template
 
+## Vorbereitungen
+
+1. Installiere [Node v8](https://nodejs.org/en/blog/release/v8.17.0)
+2. Installiere yarn: `npm install -g yarn`
+3. Installiere alle Projekt-Abhängigkeiten: `yarn install`
+4. Erstelle SSL-Zertifikat: `yarn trust-dev-cert`
+
 ## Verwenden der Projektvorlage
 
 Um die Projektvorlage zu verwenden, muss das Repository geklont und anschließend neu initialisiert werden.

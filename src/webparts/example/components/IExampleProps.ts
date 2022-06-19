@@ -1,3 +1,3 @@
 export interface IExampleProps {
-  description: string;
+    description: string;
 }

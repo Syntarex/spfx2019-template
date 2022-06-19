@@ -4,6 +4,77 @@
     "lockfileVersion": 1,
     "requires": true,
     "dependencies": {
+        "@fluentui/dom-utilities": {
+            "version": "1.1.2",
+            "resolved": "https://registry.npmjs.org/@fluentui/dom-utilities/-/dom-utilities-1.1.2.tgz",
+            "integrity": "sha512-XqPS7l3YoMwxdNlaYF6S2Mp0K3FmVIOIy2K3YkMc+eRxu9wFK6emr2Q/3rBhtG5u/On37NExRT7/5CTLnoi9gw==",
+            "requires": {
+                "@uifabric/set-version": "^7.0.24",
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
+            }
+        },
+        "@fluentui/react-window-provider": {
+            "version": "1.0.3",
+            "resolved": "https://registry.npmjs.org/@fluentui/react-window-provider/-/react-window-provider-1.0.3.tgz",
+            "integrity": "sha512-nFFhYlEWDSklAFjw87hQuOO5ZQP8or4J12ZJ7Glf+pcifRl0AySBshuGTJsTyZ0QyzgIeQYGSYf6wcPtycS0aA==",
+            "requires": {
+                "@uifabric/set-version": "^7.0.24",
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
+            }
+        },
+        "@fluentui/theme": {
+            "version": "1.7.6",
+            "resolved": "https://registry.npmjs.org/@fluentui/theme/-/theme-1.7.6.tgz",
+            "integrity": "sha512-AcQSs3MpCxl63HE/4iJMwNVvPB6e0evvMMvELSK1sro199j1t14WSwTPwTHYsBeBxdX3mH9NixrB02tzXgJK6A==",
+            "requires": {
+                "@uifabric/merge-styles": "^7.19.2",
+                "@uifabric/set-version": "^7.0.24",
+                "@uifabric/utilities": "^7.34.1",
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "@uifabric/merge-styles": {
+                    "version": "7.19.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/merge-styles/-/merge-styles-7.19.2.tgz",
+                    "integrity": "sha512-kTlhwglDqwVgIaJq+0yXgzi65plGhmFcPrfme/rXUGMJZoU+qlGT5jXj5d3kuI59p6VB8jWEg9DAxHozhYeu0g==",
+                    "requires": {
+                        "@uifabric/set-version": "^7.0.24",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/utilities": {
+                    "version": "7.34.1",
+                    "resolved": "https://registry.npmjs.org/@uifabric/utilities/-/utilities-7.34.1.tgz",
+                    "integrity": "sha512-gmQ94x/wj/my7zByFMXapLF5jDmRugWuBngx6gdvnw9rRme0YoN0G3S47vr3aw6ZTsXEnb6SJFnbtVyAGMmZRg==",
+                    "requires": {
+                        "@fluentui/dom-utilities": "^1.1.2",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "prop-types": "^15.7.2",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
+            }
+        },
         "@microsoft/api-extractor": {
             "version": "4.2.6",
             "resolved": "https://registry.npmjs.org/@microsoft/api-extractor/-/api-extractor-4.2.6.tgz",
@@ -548,13 +619,51 @@
             "resolved": "https://registry.npmjs.org/@microsoft/office-ui-fabric-react-bundle/-/office-ui-fabric-react-bundle-1.4.1.tgz",
             "integrity": "sha512-e1cmTwf2sAlPXINouSt3ufxfEJMX1JFlxzkJTsM4jsfgbd10BCSDWDGkNHU1S2LFpD6z99mFpkiktdyMU/8PlA==",
             "requires": {
-                "@types/react": "15.6.6",
                 "@types/webpack-env": "1.13.1",
                 "@uifabric/icons": "5.2.0",
                 "office-ui-fabric-react": "5.21.0",
                 "react": "15.6.2",
                 "react-dom": "15.6.2",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "office-ui-fabric-react": {
+                    "version": "5.21.0",
+                    "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
+                    "integrity": "sha512-9IBLK6JUWYvdCumKywjkSP7mf/MqTRorP1qXtb2c+w2fQJH4NkdBjanO0zr37c5VPwlqc0KvPf51E9t1NU7oTg==",
+                    "requires": {
+                        "@microsoft/load-themed-styles": "^1.7.2",
+                        "@uifabric/icons": ">=5.2.0 <6.0.0",
+                        "@uifabric/merge-styles": ">=5.6.0 <6.0.0",
+                        "@uifabric/styling": ">=5.7.0 <6.0.0",
+                        "@uifabric/utilities": ">=5.3.3 <6.0.0",
+                        "prop-types": "^15.5.10",
+                        "tslib": "^1.7.1"
+                    }
+                },
+                "react": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
+                    "integrity": "sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==",
+                    "requires": {
+                        "create-react-class": "^15.6.0",
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                },
+                "react-dom": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.6.2.tgz",
+                    "integrity": "sha512-qxrSETbovswZ0xXs1o5+1o9NfNYbLnQWUqhef36tDWb+tGrbsHjEel5DZuncWMbO0rWd5e4AvCoJBOWm3x6p3A==",
+                    "requires": {
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                }
             }
         },
         "@microsoft/package-deps-hash": {
@@ -1118,14 +1227,51 @@
                 "@microsoft/sp-odata-types": "1.4.1",
                 "@microsoft/sp-polyfills": "1.4.1",
                 "@types/es6-promise": "0.0.33",
-                "@types/react": "15.6.6",
-                "@types/react-dom": "15.5.6",
                 "@types/requirejs": "2.1.29",
                 "@types/webpack-env": "1.13.1",
                 "office-ui-fabric-react": "5.21.0",
                 "react": "15.6.2",
                 "react-dom": "15.6.2",
                 "requirejs": "2.1.20"
+            },
+            "dependencies": {
+                "office-ui-fabric-react": {
+                    "version": "5.21.0",
+                    "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
+                    "integrity": "sha512-9IBLK6JUWYvdCumKywjkSP7mf/MqTRorP1qXtb2c+w2fQJH4NkdBjanO0zr37c5VPwlqc0KvPf51E9t1NU7oTg==",
+                    "requires": {
+                        "@microsoft/load-themed-styles": "^1.7.2",
+                        "@uifabric/icons": ">=5.2.0 <6.0.0",
+                        "@uifabric/merge-styles": ">=5.6.0 <6.0.0",
+                        "@uifabric/styling": ">=5.7.0 <6.0.0",
+                        "@uifabric/utilities": ">=5.3.3 <6.0.0",
+                        "prop-types": "^15.5.10",
+                        "tslib": "^1.7.1"
+                    }
+                },
+                "react": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
+                    "integrity": "sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==",
+                    "requires": {
+                        "create-react-class": "^15.6.0",
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                },
+                "react-dom": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.6.2.tgz",
+                    "integrity": "sha512-qxrSETbovswZ0xXs1o5+1o9NfNYbLnQWUqhef36tDWb+tGrbsHjEel5DZuncWMbO0rWd5e4AvCoJBOWm3x6p3A==",
+                    "requires": {
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                }
             }
         },
         "@microsoft/sp-lodash-subset": {
@@ -1240,8 +1386,6 @@
                 "@microsoft/sp-module-interfaces": "1.4.1",
                 "@microsoft/sp-page-context": "1.4.1",
                 "@types/es6-promise": "0.0.33",
-                "@types/react": "15.6.6",
-                "@types/react-dom": "15.5.6",
                 "@types/scrollreveal": "0.0.2",
                 "@types/webpack-env": "1.13.1",
                 "office-ui-fabric": "2.6.1",
@@ -1250,6 +1394,45 @@
                 "react-dom": "15.6.2",
                 "scrollreveal": "3.3.6",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "office-ui-fabric-react": {
+                    "version": "5.21.0",
+                    "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
+                    "integrity": "sha512-9IBLK6JUWYvdCumKywjkSP7mf/MqTRorP1qXtb2c+w2fQJH4NkdBjanO0zr37c5VPwlqc0KvPf51E9t1NU7oTg==",
+                    "requires": {
+                        "@microsoft/load-themed-styles": "^1.7.2",
+                        "@uifabric/icons": ">=5.2.0 <6.0.0",
+                        "@uifabric/merge-styles": ">=5.6.0 <6.0.0",
+                        "@uifabric/styling": ">=5.7.0 <6.0.0",
+                        "@uifabric/utilities": ">=5.3.3 <6.0.0",
+                        "prop-types": "^15.5.10",
+                        "tslib": "^1.7.1"
+                    }
+                },
+                "react": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
+                    "integrity": "sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==",
+                    "requires": {
+                        "create-react-class": "^15.6.0",
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                },
+                "react-dom": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.6.2.tgz",
+                    "integrity": "sha512-qxrSETbovswZ0xXs1o5+1o9NfNYbLnQWUqhef36tDWb+tGrbsHjEel5DZuncWMbO0rWd5e4AvCoJBOWm3x6p3A==",
+                    "requires": {
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                }
             }
         },
         "@microsoft/sp-webpart-workbench": {
@@ -1278,6 +1461,63 @@
                 "react": "15.6.2",
                 "react-dom": "15.6.2",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "@types/react": {
+                    "version": "15.6.6",
+                    "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
+                    "integrity": "sha512-a45hjEjpRira6tJM8E2/aGDqqNx9/PhtQ4GxEg7MsslTuAKdweWLH0oE2K0dgMFdzw9E2yRB6jqrA8IKXaevwQ==",
+                    "dev": true
+                },
+                "@types/react-dom": {
+                    "version": "15.5.6",
+                    "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-15.5.6.tgz",
+                    "integrity": "sha512-dP4vEDEH4rL+uUl6f//c6mjepTVdJ6Ldx3z0dZbw047T5Z+o2PZDW/Qd+I4PkTmIgk7YNAZC/TFnm3IHT5UAhw==",
+                    "dev": true,
+                    "requires": {
+                        "@types/react": "^15"
+                    }
+                },
+                "office-ui-fabric-react": {
+                    "version": "5.21.0",
+                    "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
+                    "integrity": "sha512-9IBLK6JUWYvdCumKywjkSP7mf/MqTRorP1qXtb2c+w2fQJH4NkdBjanO0zr37c5VPwlqc0KvPf51E9t1NU7oTg==",
+                    "dev": true,
+                    "requires": {
+                        "@microsoft/load-themed-styles": "^1.7.2",
+                        "@uifabric/icons": ">=5.2.0 <6.0.0",
+                        "@uifabric/merge-styles": ">=5.6.0 <6.0.0",
+                        "@uifabric/styling": ">=5.7.0 <6.0.0",
+                        "@uifabric/utilities": ">=5.3.3 <6.0.0",
+                        "prop-types": "^15.5.10",
+                        "tslib": "^1.7.1"
+                    }
+                },
+                "react": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
+                    "integrity": "sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==",
+                    "dev": true,
+                    "requires": {
+                        "create-react-class": "^15.6.0",
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                },
+                "react-dom": {
+                    "version": "15.6.2",
+                    "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.6.2.tgz",
+                    "integrity": "sha512-qxrSETbovswZ0xXs1o5+1o9NfNYbLnQWUqhef36tDWb+tGrbsHjEel5DZuncWMbO0rWd5e4AvCoJBOWm3x6p3A==",
+                    "dev": true,
+                    "requires": {
+                        "fbjs": "^0.8.9",
+                        "loose-envify": "^1.1.0",
+                        "object-assign": "^4.1.0",
+                        "prop-types": "^15.5.10"
+                    }
+                }
             }
         },
         "@microsoft/stream-collator": {
@@ -1530,6 +1770,12 @@
                 "@types/q": "*"
             }
         },
+        "@types/prop-types": {
+            "version": "15.7.5",
+            "resolved": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz",
+            "integrity": "sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==",
+            "dev": true
+        },
         "@types/q": {
             "version": "0.0.32",
             "resolved": "https://registry.npmjs.org/@types/q/-/q-0.0.32.tgz",
@@ -1549,16 +1795,22 @@
             "dev": true
         },
         "@types/react": {
-            "version": "15.6.6",
-            "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
-            "integrity": "sha512-a45hjEjpRira6tJM8E2/aGDqqNx9/PhtQ4GxEg7MsslTuAKdweWLH0oE2K0dgMFdzw9E2yRB6jqrA8IKXaevwQ=="
+            "version": "16.9.19",
+            "resolved": "https://registry.npmjs.org/@types/react/-/react-16.9.19.tgz",
+            "integrity": "sha512-LJV97//H+zqKWMms0kvxaKYJDG05U2TtQB3chRLF8MPNs+MQh/H1aGlyDUxjaHvu08EAGerdX2z4LTBc7ns77A==",
+            "dev": true,
+            "requires": {
+                "@types/prop-types": "*",
+                "csstype": "^2.2.0"
+            }
         },
         "@types/react-dom": {
-            "version": "15.5.6",
-            "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-15.5.6.tgz",
-            "integrity": "sha512-dP4vEDEH4rL+uUl6f//c6mjepTVdJ6Ldx3z0dZbw047T5Z+o2PZDW/Qd+I4PkTmIgk7YNAZC/TFnm3IHT5UAhw==",
+            "version": "16.9.0",
+            "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.0.tgz",
+            "integrity": "sha512-OL2lk7LYGjxn4b0efW3Pvf2KBVP0y1v3wip1Bp7nA79NkOpElH98q3WdCEdDj93b2b0zaeBG9DvriuKjIK5xDA==",
+            "dev": true,
             "requires": {
-                "@types/react": "^15"
+                "@types/react": "*"
             }
         },
         "@types/requirejs": {
@@ -1705,6 +1957,64 @@
             "resolved": "https://registry.npmjs.org/@types/z-schema/-/z-schema-3.16.31.tgz",
             "integrity": "sha512-ccin7QmRIBE9m5DbUH/wSQT0toq8mkrvDv1uoLulyx6fmTTf+2cvpEFetGR+1pVJ6ldGPVuNx92jjEsrm8UISQ=="
         },
+        "@uifabric/foundation": {
+            "version": "7.10.3",
+            "resolved": "https://registry.npmjs.org/@uifabric/foundation/-/foundation-7.10.3.tgz",
+            "integrity": "sha512-ZP1tISpinWZHxQunqUwMWs2imX7/osOYgokSZhWzcAWMCC3TOwiU5w7oAXcKsIpMkPxI13ivac5S66qDad+IwA==",
+            "requires": {
+                "@uifabric/merge-styles": "^7.19.2",
+                "@uifabric/set-version": "^7.0.24",
+                "@uifabric/styling": "^7.20.2",
+                "@uifabric/utilities": "^7.34.1",
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "@microsoft/load-themed-styles": {
+                    "version": "1.10.270",
+                    "resolved": "https://registry.npmjs.org/@microsoft/load-themed-styles/-/load-themed-styles-1.10.270.tgz",
+                    "integrity": "sha512-HvzX1iTkQgpTl+BucTrfszOWJEQ1K1DD8Ibr1sDpS/jtFVhppuL+56mGW4tYlx5+XgN3j8FN8j/XnA0tHCK+Tw=="
+                },
+                "@uifabric/merge-styles": {
+                    "version": "7.19.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/merge-styles/-/merge-styles-7.19.2.tgz",
+                    "integrity": "sha512-kTlhwglDqwVgIaJq+0yXgzi65plGhmFcPrfme/rXUGMJZoU+qlGT5jXj5d3kuI59p6VB8jWEg9DAxHozhYeu0g==",
+                    "requires": {
+                        "@uifabric/set-version": "^7.0.24",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/styling": {
+                    "version": "7.20.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/styling/-/styling-7.20.2.tgz",
+                    "integrity": "sha512-FiGdeTsfJAs8qrqU2aLx70C2MT8YsjraMzr0HSiXKFQ2/LM4hwAYpbC41NIHzUemm63uA8NJRLHJlSv3S7V2SQ==",
+                    "requires": {
+                        "@fluentui/theme": "^1.7.6",
+                        "@microsoft/load-themed-styles": "^1.10.26",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "@uifabric/utilities": "^7.34.1",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/utilities": {
+                    "version": "7.34.1",
+                    "resolved": "https://registry.npmjs.org/@uifabric/utilities/-/utilities-7.34.1.tgz",
+                    "integrity": "sha512-gmQ94x/wj/my7zByFMXapLF5jDmRugWuBngx6gdvnw9rRme0YoN0G3S47vr3aw6ZTsXEnb6SJFnbtVyAGMmZRg==",
+                    "requires": {
+                        "@fluentui/dom-utilities": "^1.1.2",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "prop-types": "^15.7.2",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
+            }
+        },
         "@uifabric/icons": {
             "version": "5.2.0",
             "resolved": "https://registry.npmjs.org/@uifabric/icons/-/icons-5.2.0.tgz",
@@ -1720,6 +2030,60 @@
             "integrity": "sha512-4/EtO6Ns7kNtKxC+6InShwVQeNQEDT5H8Ex7m/i4OrT9i7csje4YwBQPkkpm31qJwEZEyD7bbAwyLezI63sLhg==",
             "requires": {
                 "tslib": "^1.7.1"
+            }
+        },
+        "@uifabric/react-hooks": {
+            "version": "7.14.2",
+            "resolved": "https://registry.npmjs.org/@uifabric/react-hooks/-/react-hooks-7.14.2.tgz",
+            "integrity": "sha512-7KCHxXoZhdVDfPY+ZF7+FGh7sD5naDyDE2uOos+kaRg10iuOhz/9QPLsZAIqMDpDS/l5G5DGv4EAgBaiEZbs6Q==",
+            "requires": {
+                "@fluentui/react-window-provider": "^1.0.3",
+                "@uifabric/set-version": "^7.0.24",
+                "@uifabric/utilities": "^7.34.1",
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "@uifabric/merge-styles": {
+                    "version": "7.19.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/merge-styles/-/merge-styles-7.19.2.tgz",
+                    "integrity": "sha512-kTlhwglDqwVgIaJq+0yXgzi65plGhmFcPrfme/rXUGMJZoU+qlGT5jXj5d3kuI59p6VB8jWEg9DAxHozhYeu0g==",
+                    "requires": {
+                        "@uifabric/set-version": "^7.0.24",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/utilities": {
+                    "version": "7.34.1",
+                    "resolved": "https://registry.npmjs.org/@uifabric/utilities/-/utilities-7.34.1.tgz",
+                    "integrity": "sha512-gmQ94x/wj/my7zByFMXapLF5jDmRugWuBngx6gdvnw9rRme0YoN0G3S47vr3aw6ZTsXEnb6SJFnbtVyAGMmZRg==",
+                    "requires": {
+                        "@fluentui/dom-utilities": "^1.1.2",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "prop-types": "^15.7.2",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
+            }
+        },
+        "@uifabric/set-version": {
+            "version": "7.0.24",
+            "resolved": "https://registry.npmjs.org/@uifabric/set-version/-/set-version-7.0.24.tgz",
+            "integrity": "sha512-t0Pt21dRqdC707/ConVJC0WvcQ/KF7tKLU8AZY7YdjgJpMHi1c0C427DB4jfUY19I92f60LOQyhJ4efH+KpFEg==",
+            "requires": {
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
             }
         },
         "@uifabric/styling": {
@@ -4439,6 +4803,12 @@
             "requires": {
                 "cssom": "0.3.x"
             }
+        },
+        "csstype": {
+            "version": "2.6.20",
+            "resolved": "https://registry.npmjs.org/csstype/-/csstype-2.6.20.tgz",
+            "integrity": "sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==",
+            "dev": true
         },
         "csurf": {
             "version": "1.8.3",
@@ -12391,17 +12761,77 @@
             "integrity": "sha512-VwGbHIT89e+9XdGcb2gdPgKgYQGjRG5peyPNO982znlCSB/UIM9g7gF6JmHpaMHb8xvEScY7UGJ8GRz6GQVBRg=="
         },
         "office-ui-fabric-react": {
-            "version": "5.21.0",
-            "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
-            "integrity": "sha512-9IBLK6JUWYvdCumKywjkSP7mf/MqTRorP1qXtb2c+w2fQJH4NkdBjanO0zr37c5VPwlqc0KvPf51E9t1NU7oTg==",
+            "version": "7.90.0",
+            "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-7.90.0.tgz",
+            "integrity": "sha512-ZaMUyaH2GOp1e/kvOJ5m5DFotsRWaKOw++/39Ua6XLQ+SJ7UGtUxfhy8q0xEsDZAX/z8QMX+AkhuAIpdJ2yhhg==",
             "requires": {
-                "@microsoft/load-themed-styles": "^1.7.2",
-                "@uifabric/icons": ">=5.2.0 <6.0.0",
-                "@uifabric/merge-styles": ">=5.6.0 <6.0.0",
-                "@uifabric/styling": ">=5.7.0 <6.0.0",
-                "@uifabric/utilities": ">=5.3.3 <6.0.0",
+                "@microsoft/load-themed-styles": "^1.10.26",
+                "@uifabric/foundation": "^7.5.6",
+                "@uifabric/icons": "^7.3.5",
+                "@uifabric/merge-styles": "^7.8.6",
+                "@uifabric/react-hooks": "^7.0.6",
+                "@uifabric/set-version": "^7.0.5",
+                "@uifabric/styling": "^7.10.5",
+                "@uifabric/utilities": "^7.11.6",
                 "prop-types": "^15.5.10",
-                "tslib": "^1.7.1"
+                "tslib": "^1.10.0"
+            },
+            "dependencies": {
+                "@microsoft/load-themed-styles": {
+                    "version": "1.10.270",
+                    "resolved": "https://registry.npmjs.org/@microsoft/load-themed-styles/-/load-themed-styles-1.10.270.tgz",
+                    "integrity": "sha512-HvzX1iTkQgpTl+BucTrfszOWJEQ1K1DD8Ibr1sDpS/jtFVhppuL+56mGW4tYlx5+XgN3j8FN8j/XnA0tHCK+Tw=="
+                },
+                "@uifabric/icons": {
+                    "version": "7.7.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/icons/-/icons-7.7.2.tgz",
+                    "integrity": "sha512-3f223BZ5TXTF37J7lG+saGBY7U8vAi5HyMP58ccIoUafOj5551h5sovPFD/hVIYzYFhvT+/VpbUzF3vw+RARHA==",
+                    "requires": {
+                        "@uifabric/set-version": "^7.0.24",
+                        "@uifabric/styling": "^7.20.2",
+                        "@uifabric/utilities": "^7.34.1",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/merge-styles": {
+                    "version": "7.19.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/merge-styles/-/merge-styles-7.19.2.tgz",
+                    "integrity": "sha512-kTlhwglDqwVgIaJq+0yXgzi65plGhmFcPrfme/rXUGMJZoU+qlGT5jXj5d3kuI59p6VB8jWEg9DAxHozhYeu0g==",
+                    "requires": {
+                        "@uifabric/set-version": "^7.0.24",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/styling": {
+                    "version": "7.20.2",
+                    "resolved": "https://registry.npmjs.org/@uifabric/styling/-/styling-7.20.2.tgz",
+                    "integrity": "sha512-FiGdeTsfJAs8qrqU2aLx70C2MT8YsjraMzr0HSiXKFQ2/LM4hwAYpbC41NIHzUemm63uA8NJRLHJlSv3S7V2SQ==",
+                    "requires": {
+                        "@fluentui/theme": "^1.7.6",
+                        "@microsoft/load-themed-styles": "^1.10.26",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "@uifabric/utilities": "^7.34.1",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "@uifabric/utilities": {
+                    "version": "7.34.1",
+                    "resolved": "https://registry.npmjs.org/@uifabric/utilities/-/utilities-7.34.1.tgz",
+                    "integrity": "sha512-gmQ94x/wj/my7zByFMXapLF5jDmRugWuBngx6gdvnw9rRme0YoN0G3S47vr3aw6ZTsXEnb6SJFnbtVyAGMmZRg==",
+                    "requires": {
+                        "@fluentui/dom-utilities": "^1.1.2",
+                        "@uifabric/merge-styles": "^7.19.2",
+                        "@uifabric/set-version": "^7.0.24",
+                        "prop-types": "^15.7.2",
+                        "tslib": "^1.10.0"
+                    }
+                },
+                "tslib": {
+                    "version": "1.14.1",
+                    "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+                    "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+                }
             }
         },
         "on-finished": {
@@ -13837,26 +14267,24 @@
             }
         },
         "react": {
-            "version": "15.6.2",
-            "resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
-            "integrity": "sha512-DHyivomgg2kMUWsT3mfMtIKNxJyAtlcFtCd+vWvk4u/mAsnXqrhkDVAzZR7aSS/kk2hvAS7rwlia6zyAcJjcsg==",
+            "version": "16.12.0",
+            "resolved": "https://registry.npmjs.org/react/-/react-16.12.0.tgz",
+            "integrity": "sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==",
             "requires": {
-                "create-react-class": "^15.6.0",
-                "fbjs": "^0.8.9",
                 "loose-envify": "^1.1.0",
-                "object-assign": "^4.1.0",
-                "prop-types": "^15.5.10"
+                "object-assign": "^4.1.1",
+                "prop-types": "^15.6.2"
             }
         },
         "react-dom": {
-            "version": "15.6.2",
-            "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-15.6.2.tgz",
-            "integrity": "sha512-qxrSETbovswZ0xXs1o5+1o9NfNYbLnQWUqhef36tDWb+tGrbsHjEel5DZuncWMbO0rWd5e4AvCoJBOWm3x6p3A==",
+            "version": "16.12.0",
+            "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.12.0.tgz",
+            "integrity": "sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==",
             "requires": {
-                "fbjs": "^0.8.9",
                 "loose-envify": "^1.1.0",
-                "object-assign": "^4.1.0",
-                "prop-types": "^15.5.10"
+                "object-assign": "^4.1.1",
+                "prop-types": "^15.6.2",
+                "scheduler": "^0.18.0"
             }
         },
         "react-is": {
@@ -14626,6 +15054,15 @@
             "resolved": "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz",
             "integrity": "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==",
             "dev": true
+        },
+        "scheduler": {
+            "version": "0.18.0",
+            "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.18.0.tgz",
+            "integrity": "sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==",
+            "requires": {
+                "loose-envify": "^1.1.0",
+                "object-assign": "^4.1.1"
+            }
         },
         "schema-utils": {
             "version": "0.3.0",
@@ -16507,9 +16944,9 @@
             "dev": true
         },
         "typescript": {
-            "version": "4.7.4",
-            "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.7.4.tgz",
-            "integrity": "sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==",
+            "version": "3.7.5",
+            "resolved": "https://registry.npmjs.org/typescript/-/typescript-3.7.5.tgz",
+            "integrity": "sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==",
             "dev": true
         },
         "ua-parser-js": {

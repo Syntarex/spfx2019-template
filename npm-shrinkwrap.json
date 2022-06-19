@@ -516,6 +516,12 @@
                 "lodash": "~4.15.0"
             },
             "dependencies": {
+                "@types/lodash": {
+                    "version": "4.14.74",
+                    "resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.74.tgz",
+                    "integrity": "sha512-BZknw3E/z3JmCLqQVANcR17okqVTPZdlxvcIz0fJiJVLUCbSH1hK3zs9r634PVSmrzAxN+n/fxlVRiYoArdOIQ==",
+                    "dev": true
+                },
                 "big.js": {
                     "version": "3.2.0",
                     "resolved": "https://registry.npmjs.org/big.js/-/big.js-3.2.0.tgz",
@@ -619,6 +625,7 @@
             "resolved": "https://registry.npmjs.org/@microsoft/office-ui-fabric-react-bundle/-/office-ui-fabric-react-bundle-1.4.1.tgz",
             "integrity": "sha512-e1cmTwf2sAlPXINouSt3ufxfEJMX1JFlxzkJTsM4jsfgbd10BCSDWDGkNHU1S2LFpD6z99mFpkiktdyMU/8PlA==",
             "requires": {
+                "@types/react": "15.6.6",
                 "@types/webpack-env": "1.13.1",
                 "@uifabric/icons": "5.2.0",
                 "office-ui-fabric-react": "5.21.0",
@@ -627,6 +634,11 @@
                 "tslib": "~1.8.0"
             },
             "dependencies": {
+                "@types/react": {
+                    "version": "15.6.6",
+                    "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
+                    "integrity": "sha512-a45hjEjpRira6tJM8E2/aGDqqNx9/PhtQ4GxEg7MsslTuAKdweWLH0oE2K0dgMFdzw9E2yRB6jqrA8IKXaevwQ=="
+                },
                 "office-ui-fabric-react": {
                     "version": "5.21.0",
                     "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
@@ -936,6 +948,12 @@
                         }
                     }
                 },
+                "@types/lodash": {
+                    "version": "4.14.74",
+                    "resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.74.tgz",
+                    "integrity": "sha512-BZknw3E/z3JmCLqQVANcR17okqVTPZdlxvcIz0fJiJVLUCbSH1hK3zs9r634PVSmrzAxN+n/fxlVRiYoArdOIQ==",
+                    "dev": true
+                },
                 "@types/webpack-env": {
                     "version": "1.13.0",
                     "resolved": "https://registry.npmjs.org/@types/webpack-env/-/webpack-env-1.13.0.tgz",
@@ -1227,6 +1245,8 @@
                 "@microsoft/sp-odata-types": "1.4.1",
                 "@microsoft/sp-polyfills": "1.4.1",
                 "@types/es6-promise": "0.0.33",
+                "@types/react": "15.6.6",
+                "@types/react-dom": "15.5.6",
                 "@types/requirejs": "2.1.29",
                 "@types/webpack-env": "1.13.1",
                 "office-ui-fabric-react": "5.21.0",
@@ -1235,6 +1255,19 @@
                 "requirejs": "2.1.20"
             },
             "dependencies": {
+                "@types/react": {
+                    "version": "15.6.6",
+                    "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
+                    "integrity": "sha512-a45hjEjpRira6tJM8E2/aGDqqNx9/PhtQ4GxEg7MsslTuAKdweWLH0oE2K0dgMFdzw9E2yRB6jqrA8IKXaevwQ=="
+                },
+                "@types/react-dom": {
+                    "version": "15.5.6",
+                    "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-15.5.6.tgz",
+                    "integrity": "sha512-dP4vEDEH4rL+uUl6f//c6mjepTVdJ6Ldx3z0dZbw047T5Z+o2PZDW/Qd+I4PkTmIgk7YNAZC/TFnm3IHT5UAhw==",
+                    "requires": {
+                        "@types/react": "^15"
+                    }
+                },
                 "office-ui-fabric-react": {
                     "version": "5.21.0",
                     "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
@@ -1282,6 +1315,13 @@
                 "@types/lodash": "4.14.74",
                 "@types/webpack-env": "1.13.1",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "@types/lodash": {
+                    "version": "4.14.74",
+                    "resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.74.tgz",
+                    "integrity": "sha512-BZknw3E/z3JmCLqQVANcR17okqVTPZdlxvcIz0fJiJVLUCbSH1hK3zs9r634PVSmrzAxN+n/fxlVRiYoArdOIQ=="
+                }
             }
         },
         "@microsoft/sp-module-interfaces": {
@@ -1386,6 +1426,8 @@
                 "@microsoft/sp-module-interfaces": "1.4.1",
                 "@microsoft/sp-page-context": "1.4.1",
                 "@types/es6-promise": "0.0.33",
+                "@types/react": "15.6.6",
+                "@types/react-dom": "15.5.6",
                 "@types/scrollreveal": "0.0.2",
                 "@types/webpack-env": "1.13.1",
                 "office-ui-fabric": "2.6.1",
@@ -1396,6 +1438,19 @@
                 "tslib": "~1.8.0"
             },
             "dependencies": {
+                "@types/react": {
+                    "version": "15.6.6",
+                    "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
+                    "integrity": "sha512-a45hjEjpRira6tJM8E2/aGDqqNx9/PhtQ4GxEg7MsslTuAKdweWLH0oE2K0dgMFdzw9E2yRB6jqrA8IKXaevwQ=="
+                },
+                "@types/react-dom": {
+                    "version": "15.5.6",
+                    "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-15.5.6.tgz",
+                    "integrity": "sha512-dP4vEDEH4rL+uUl6f//c6mjepTVdJ6Ldx3z0dZbw047T5Z+o2PZDW/Qd+I4PkTmIgk7YNAZC/TFnm3IHT5UAhw==",
+                    "requires": {
+                        "@types/react": "^15"
+                    }
+                },
                 "office-ui-fabric-react": {
                     "version": "5.21.0",
                     "resolved": "https://registry.npmjs.org/office-ui-fabric-react/-/office-ui-fabric-react-5.21.0.tgz",
@@ -1707,9 +1762,10 @@
             }
         },
         "@types/lodash": {
-            "version": "4.14.74",
-            "resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.74.tgz",
-            "integrity": "sha512-BZknw3E/z3JmCLqQVANcR17okqVTPZdlxvcIz0fJiJVLUCbSH1hK3zs9r634PVSmrzAxN+n/fxlVRiYoArdOIQ=="
+            "version": "4.14.182",
+            "resolved": "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.182.tgz",
+            "integrity": "sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==",
+            "dev": true
         },
         "@types/log4js": {
             "version": "2.3.5",
@@ -7064,6 +7120,12 @@
                     "integrity": "sha512-Al67oatbRSo3RV5hRqIoln6Y5yMVbJSIn4jEJNL7VCImzq/kLr7vvb6sFRJXqr8rpHc/2kJOM+y0sPKN47VdzA==",
                     "dev": true
                 },
+                "lodash": {
+                    "version": "1.0.2",
+                    "resolved": "https://registry.npmjs.org/lodash/-/lodash-1.0.2.tgz",
+                    "integrity": "sha512-0VSEDVec/Me2eATuoiQd8IjyBMMX0fahob8YJ96V1go2RjvCk1m1GxmtfXn8RNSaLaTtop7fsuhhu9oLk3hUgA==",
+                    "dev": true
+                },
                 "minimatch": {
                     "version": "0.2.14",
                     "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-0.2.14.tgz",
@@ -11140,10 +11202,9 @@
             }
         },
         "lodash": {
-            "version": "1.0.2",
-            "resolved": "https://registry.npmjs.org/lodash/-/lodash-1.0.2.tgz",
-            "integrity": "sha512-0VSEDVec/Me2eATuoiQd8IjyBMMX0fahob8YJ96V1go2RjvCk1m1GxmtfXn8RNSaLaTtop7fsuhhu9oLk3hUgA==",
-            "dev": true
+            "version": "4.17.21",
+            "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+            "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
         },
         "lodash._baseassign": {
             "version": "3.2.0",

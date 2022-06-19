@@ -3,6 +3,22 @@
 const gulp = require("gulp");
 const build = require("@microsoft/sp-build-web");
 
+build.addSuppression(/Warning - \[sass\] The local CSS class .* is not camelCase and will not be type-safe./gi);
+
+// force use of projects specified typescript version
+const typeScriptConfig = require("@microsoft/gulp-core-build-typescript/lib/TypeScriptConfiguration");
+typeScriptConfig.TypeScriptConfiguration.setTypescriptCompiler(require("typescript"));
+
+// force use of projects specified react version
+build.configureWebpack.mergeConfig({
+    additionalConfiguration: (generatedConfiguration) => {
+        generatedConfiguration.externals = generatedConfiguration.externals.filter(
+            (name) => !["react", "react-dom"].includes(name),
+        );
+        return generatedConfiguration;
+    },
+});
+
 build.initialize(require("gulp"));
 
 gulp.task("version-sync", (done) => {

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
-  "solution": {
-    "name": "spfx-2019-template-client-side-solution",
-    "id": "45d6bbd0-a98e-4642-aeaf-c66469d1515b",
-    "version": "1.0.0.0",
-    "includeClientSideAssets": true,
-    "skipFeatureDeployment": true
-  },
-  "paths": {
-    "zippedPackage": "solution/spfx-2019-template.sppkg"
-  }
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "spfx-2019-template-client-side-solution",
+        "id": "45d6bbd0-a98e-4642-aeaf-c66469d1515b",
+        "version": "0.0.1.0",
+        "includeClientSideAssets": true,
+        "skipFeatureDeployment": true
+    },
+    "paths": {
+        "zippedPackage": "solution/spfx-2019-template.sppkg"
+    }
 }

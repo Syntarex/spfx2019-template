@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "editorconfig.editorconfig",
-        "dbaeumer.vscode-eslint",
         "eg2.vscode-npm-script",
         "christian-kohler.npm-intellisense",
         "christian-kohler.path-intellisense",

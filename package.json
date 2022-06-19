@@ -7,18 +7,22 @@
         "node": ">=0.10.0"
     },
     "scripts": {
-        "build": "gulp bundle",
-        "clean": "gulp clean",
-        "test": "gulp test",
-        "trust-dev-cert": "gulp trust-dev-cert"
+        "prebuild": "npm run clean && npm run version-sync",
+        "preserve": "npm run clean",
+        "build": "gulp bundle --ship && gulp package-solution --ship",
+        "clean": "gulp clean && rimraf ./sharepoint && rimraf ./release",
+        "trust-dev-cert": "gulp trust-dev-cert",
+        "serve": "gulp bundle && gulp package-solution && gulp serve",
+        "version-sync": "gulp version-sync"
     },
     "dependencies": {
-        "react": "15.6.2",
-        "react-dom": "15.6.2",
+        "@microsoft/sp-core-library": "1.4.1",
+        "@microsoft/sp-office-ui-fabric-core": "^1.4.1",
+        "@microsoft/sp-webpart-base": "1.4.1",
         "@types/react": "15.6.6",
         "@types/react-dom": "15.5.6",
-        "@microsoft/sp-core-library": "1.4.1",
-        "@microsoft/sp-webpart-base": "1.4.1"
+        "react": "15.6.2",
+        "react-dom": "15.6.2"
     },
     "resolutions": {
         "@types/react": "15.6.6"
@@ -29,14 +33,8 @@
         "@microsoft/sp-webpart-workbench": "1.4.1",
         "@types/es6-promise": "0.0.33",
         "@types/webpack-env": "1.13.1",
-        "@typescript-eslint/eslint-plugin": "^5.28.0",
-        "@typescript-eslint/parser": "^5.28.0",
-        "eslint": "^8.18.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-react": "^7.30.0",
         "gulp": "3.9.1",
-        "pre-commit": "^1.2.2",
+        "gulp-cli": "2.3.0",
         "rimraf": "^3.0.2",
         "typescript": "4.7.4"
     }

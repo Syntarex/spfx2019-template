@@ -15,11 +15,15 @@ React hat einen komponentenbasierten Ansatz und integriert sich sehr gut mit dem
 
 ### Lodash
 
-`lodash` ist eine Hilfsbibliothek mit vielen verschiedenen Hilfsfunktionen. Funktioniert dank seiner makellosen Typsicherheit sehr gut in TypeScript Projekten.
+[`lodash`](https://lodash.com/docs) ist eine Hilfsbibliothek mit vielen verschiedenen Hilfsfunktionen. Funktioniert dank seiner makellosen Typsicherheit sehr gut in TypeScript Projekten.
 
 ### Recoil
 
 [`recoil`](https://recoiljs.org) wird genutzt um Daten zwischen Komponenten einfacher zu kommunizieren. Recoil reduziert das Rerendering von `react`-Komponenten auf ein Minimum und erhöht so die Performance.
+
+### PnPJS
+
+TODO
 
 ## Build-Chain
 

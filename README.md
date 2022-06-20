@@ -4,8 +4,6 @@
 
 1. Installiere [Node v8](https://nodejs.org/en/blog/release/v8.17.0)
 2. Installiere [Python 2](https://www.python.org/downloads/windows)
-3. Installiere alle Projekt-Abhängigkeiten: `npm install`
-4. Erstelle SSL-Zertifikat: `npm run trust-dev-cert`
 
 ## Verwenden der Projektvorlage
 
@@ -20,9 +18,14 @@ $ git clone git@github.com:Syntarex/spfx2019-template.git
 ##### Neu initialisieren
 
 ```
-$ rm -f -r .git
+$ rmdir .git
 $ git init
 ```
+
+##### Installieren
+
+1. Installiere alle Projekt-Abhängigkeiten: `npm install`
+2. Erstelle SSL-Zertifikat: `npm run trust-dev-cert`
 
 ## Scripts
 

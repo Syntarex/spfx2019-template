@@ -1,11 +1,21 @@
 # SPFx
 
-Dieses Dokument soll einen Überblick darüber geben, welche Möglichkeiten SPFx während der Entwicklung gibt.
+Dieses Dokument soll einen Überblick darüber geben, was SPFx ist, wie es sich im Ökosystem einfügt und welche Möglichkeiten SPFx während der Entwicklung gibt.
 
-## Lokalisierung
+## Was ist ein SPFx
 
 TODO
 
-## WebPart Properties
+## Entwickler-Features
+
+### Theming
+
+TODO
+
+### Lokalisierung
+
+TODO
+
+### WebPart Properties
 
 TODO

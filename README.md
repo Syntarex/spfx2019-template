@@ -24,6 +24,42 @@ $ rm -f -r .git
 $ git init
 ```
 
+## Scripts
+
+Die folgenden Skripte können im Terminal ausgeführt werden.
+
+### build
+
+Nutzt die SPFx Buildchain um TypeScript- und SCSS-Code zu kompilieren.
+
+```
+npm run build
+```
+
+### ship
+
+Nutzt die SPFx Buildchain um TypeScript- und SCSS-Code optimiert zu kompilieren und führt alle Projekt-Assets zu einer bereitstellbaren SharePoint-Lösung zusammen.
+
+```
+npm run ship
+```
+
+### clean
+
+Löscht cache- und alte build-Dateien.
+
+```
+npm run clean
+```
+
+### serve
+
+Startet einen Test-Server und ein bereitstellbares Lösungspaket, welches auf den Test-Server zeigt.
+
+```
+npm run serve
+```
+
 ## Projektstruktur
 
 TODO

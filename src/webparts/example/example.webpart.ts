@@ -3,7 +3,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import * as strings from "ExampleWebPartStrings";
-import HelloWorld from "./components/hello-world/hello-world.component";
+import HelloWorld from "../../components/hello-world/hello-world.component";
 
 export interface IExampleWebPartProps {
     description: string;

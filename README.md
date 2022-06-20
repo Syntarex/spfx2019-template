@@ -4,6 +4,7 @@
 
 1. Installiere [Node v8](https://nodejs.org/en/blog/release/v8.17.0)
 2. Installiere [Python 2](https://www.python.org/downloads/windows)
+3. Installiere [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## Verwenden der Projektvorlage
 

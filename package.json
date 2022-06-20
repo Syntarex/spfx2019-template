@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "@microsoft/sp-core-library": "1.4.1",
-        "@microsoft/sp-office-ui-fabric-core": "^1.4.1",
+        "@microsoft/sp-office-ui-fabric-core": "1.4.1",
         "@microsoft/sp-webpart-base": "1.4.1",
         "lodash": "^4.17.21",
         "office-ui-fabric-react": "7.90.0",

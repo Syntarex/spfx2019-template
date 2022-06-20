@@ -5,6 +5,7 @@
         "module": "esnext",
         "moduleResolution": "node",
         "jsx": "react",
+        "allowJs": true,
         "declaration": true,
         "sourceMap": true,
         "experimentalDecorators": true,

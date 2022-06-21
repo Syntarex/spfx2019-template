@@ -2,7 +2,7 @@
 
 Dieses Dokument soll einen Überblick darüber geben, was SPFx ist, wie es sich im Ökosystem einfügt und welche Möglichkeiten SPFx während der Entwicklung gibt.
 
-## Was ist ein SPFx
+## Was ist SPFx
 
 TODO
 

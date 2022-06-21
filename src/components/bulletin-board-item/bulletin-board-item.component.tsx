@@ -8,7 +8,11 @@ interface IBulletinBoardItemProps {
 const BulletinBoardItem = (props: IBulletinBoardItemProps) => {
     const { value } = props;
 
-    return <p>{value.Title}</p>;
+    return (
+        <div>
+            <h4>{value.Title}</h4>
+        </div>
+    );
 };
 
 export default BulletinBoardItem;

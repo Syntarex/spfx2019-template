@@ -3,6 +3,7 @@ import * as React from "react";
 import { fetchAdverts } from "../../data/advert.fetch";
 import { IAdvert } from "../../model/advert.model";
 import BulletinBoardItem from "../bulletin-board-item/bulletin-board-item.component";
+import styles from "./bulletin-board.module.scss";
 
 interface IBulletinBoardProps {}
 
@@ -11,7 +12,7 @@ const BulletinBoard = (props: IBulletinBoardProps) => {
 
     // Führe einmalig aus wenn Komponente das erste mal gerendert wird
     React.useEffect(() => {
-        setAdverts(fetchAdverts());
+        fetchAdverts().then((response) => setAdverts(response));
     }, []);
 
     if (_.isNull(adverts)) {
@@ -19,9 +20,9 @@ const BulletinBoard = (props: IBulletinBoardProps) => {
     }
 
     return (
-        <ul>
-            {adverts.map((each) => (
-                <li>
+        <ul className={styles.list}>
+            {adverts.map((each, index) => (
+                <li key={index} className={styles.item}>
                     <BulletinBoardItem value={each} />
                 </li>
             ))}

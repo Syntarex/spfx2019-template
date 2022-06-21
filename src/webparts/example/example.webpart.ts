@@ -3,7 +3,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import * as strings from "ExampleWebPartStrings";
-import RandomNumberGenerator from "../../components/random-number-generator/random-number-generator.component";
+import BulletinBoard from "../../components/bulletin-board/bulletin-board.component";
 
 export interface IExampleWebPartProps {
     description: string;
@@ -11,10 +11,7 @@ export interface IExampleWebPartProps {
 
 export default class ExampleWebPart extends BaseClientSideWebPart<IExampleWebPartProps> {
     public render(): void {
-        const element: React.ReactElement = React.createElement(RandomNumberGenerator, {
-            min: 10,
-            max: 1,
-        });
+        const element: React.ReactElement = React.createElement(BulletinBoard, {});
 
         ReactDOM.render(element, this.domElement);
     }

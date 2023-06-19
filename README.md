@@ -23,6 +23,14 @@ $ rmdir .git
 $ git init
 ```
 
+##### IDs ändern
+
+Jede Lösung und jeder WebPart muss eine eindeutige UUID besitzen.
+Diese findet man unter:
+
+-   `/src/webparts/example.manifest.json`
+-   `/config/package-solution.json`
+
 ##### Installieren
 
 1. Installiere alle Projekt-Abhängigkeiten: `npm install`
@@ -66,4 +74,26 @@ npm run serve
 
 ## Projektstruktur
 
-TODO
+Die folgende Ordnerstruktur wird standardmäßig von der Projektvorlage verwendet:
+
+-   `/.vscode`: Verzeichnis für Konfiguration der Entwicklungsumgebung
+-   `/config`: Konfiguration von SPFx und des Lösungspaketes
+-   `/docs`: Weiterführende Informationen
+-   `/node_modules`: Ein Verzeichnis mit allen installierten Abhängigkeiten
+-   `/src`: Beinhaltet den Quellcode
+-   `/src/components`: Beinhaltet alle React-Komponenten
+-   `/src/data`: Beinhaltet Datenlogik (Abfragen, Filterungen etc.)
+-   `/src/model`: Beinhaltet Typen bzw. Datenmodelle
+-   `/src/webparts`: Beinhaltet WebPart-Klassen
+-   `/src/webparts/loc`: Beinhaltet Lokalisierungsdateien
+-   `/teams`: Metadaten und Assets, falls die Lösung auch als Teams-App ausgerollt werden soll
+
+Zusätzlich gibt es im Root-Verzeichnis Dateien:
+
+-   `/.editorconfig`: Konfiguriere Visual Studio Code Editor
+-   `/.gitattributes`: Forciere Metadaten bei Git-Commit
+-   `/.gitignore`: Erlaubt das Exkludieren von Dateien und Ordnern für Git
+-   `/.prettierrc`: Konfiguriert das Prettier-Plugin
+-   `/gulpfile.js`: Steuert verschiedene Aspekte der SPFx-Buildchain. **Achtung: Bearbeite diese Datei nur, wenn du weißt was du tust.**
+-   `/package.json`: Metadaten zum Projekt, sowie eine Liste der Abhängigkeiten
+-   `/tsconfig.json`: Konfiguriert den TypeScript-Compiler

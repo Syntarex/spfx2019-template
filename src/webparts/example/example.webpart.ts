@@ -2,6 +2,7 @@ import { BaseClientSideWebPart, IPropertyPaneConfiguration, PropertyPaneTextFiel
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+import { setup } from "@pnp/sp/splibconfig";
 import * as strings from "ExampleWebPartStrings";
 import { Main } from "../../components/main/main.component";
 
@@ -10,6 +11,14 @@ export interface IExampleWebPartProps {
 }
 
 export default class ExampleWebPart extends BaseClientSideWebPart<IExampleWebPartProps> {
+    public async onInit(): Promise<void> {
+        super.onInit();
+
+        setup({
+            spfxContext: this.context,
+        });
+    }
+
     public render(): void {
         const element: React.ReactElement = React.createElement(Main, {});
 

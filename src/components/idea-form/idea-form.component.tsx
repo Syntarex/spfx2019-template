@@ -1,3 +1,4 @@
+import * as _ from "lodash";
 import { PrimaryButton, TextField } from "office-ui-fabric-react";
 import * as React from "react";
 import { addIdea } from "../../data/idea.data";
@@ -14,7 +15,7 @@ export const IdeaForm = (props: IdeaFormProps) => {
     const [volume, setVolume] = React.useState("");
 
     const onTitleChange = (newTitle: string) => {
-        setTitle(newTitle.trim().toLowerCase());
+        setTitle(_.toLower(newTitle));
     };
 
     const onClick = () => {

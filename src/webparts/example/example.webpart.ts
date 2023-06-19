@@ -3,7 +3,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import * as strings from "ExampleWebPartStrings";
-import HelloWorld from "../../components/hello-world/hello-world.component";
+import { Main } from "../../components/main/main.component";
 
 export interface IExampleWebPartProps {
     description: string;
@@ -11,9 +11,7 @@ export interface IExampleWebPartProps {
 
 export default class ExampleWebPart extends BaseClientSideWebPart<IExampleWebPartProps> {
     public render(): void {
-        const element: React.ReactElement = React.createElement(HelloWorld, {
-            text: this.properties.description,
-        });
+        const element: React.ReactElement = React.createElement(Main, {});
 
         ReactDOM.render(element, this.domElement);
     }

@@ -1,12 +1,26 @@
+import { PrimaryButton } from "office-ui-fabric-react";
 import * as React from "react";
-import styles from "./hello-world.module.scss";
 
-interface IHelloWorldProps {
-    text: string;
+// "Properties"
+interface HelloWorldProps {
+    counterStartValue: number;
+    buttonText: string | undefined;
 }
 
-const HelloWorld = (props: IHelloWorldProps) => {
-    return <h1 className={styles.hello}>Hello {props.text}</h1>;
-};
+export const HelloWorld = (props: HelloWorldProps) => {
+    // Ein State
+    const [counter, setCounter] = React.useState(props.counterStartValue);
 
-export default HelloWorld;
+    // Funktion zum Hochzählen
+    const countUp = () => {
+        setCounter(counter + 1);
+    };
+
+    // JSX
+    return (
+        <div>
+            <p>Counter: {counter}</p>
+            <PrimaryButton onClick={countUp}>{props.buttonText}</PrimaryButton>
+        </div>
+    );
+};

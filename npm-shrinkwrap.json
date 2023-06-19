@@ -1209,7 +1209,15 @@
             "requires": {
                 "@microsoft/sp-lodash-subset": "1.4.1",
                 "@microsoft/sp-module-interfaces": "1.4.1",
+                "@types/es6-promise": "0.0.33",
                 "@types/webpack-env": "1.13.1"
+            },
+            "dependencies": {
+                "@types/es6-promise": {
+                    "version": "0.0.33",
+                    "resolved": "https://registry.npmjs.org/@types/es6-promise/-/es6-promise-0.0.33.tgz",
+                    "integrity": "sha512-HKJFVLCGrWQ/1unEw8JdaTxu6n3EUxmwTxJ6D0O1x0gD8joCsgoTWxEgevb7fp2XIogNjof3KEd+3bJoGne/nw=="
+                }
             }
         },
         "@microsoft/sp-extension-base": {
@@ -1247,10 +1255,18 @@
                 "@microsoft/sp-core-library": "1.4.1",
                 "@microsoft/sp-lodash-subset": "1.4.1",
                 "@types/adal": "1.0.27",
+                "@types/es6-promise": "0.0.33",
                 "@types/sinon": "1.16.34",
                 "@types/webpack-env": "1.13.1",
                 "adal-angular": "1.0.16",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "@types/es6-promise": {
+                    "version": "0.0.33",
+                    "resolved": "https://registry.npmjs.org/@types/es6-promise/-/es6-promise-0.0.33.tgz",
+                    "integrity": "sha512-HKJFVLCGrWQ/1unEw8JdaTxu6n3EUxmwTxJ6D0O1x0gD8joCsgoTWxEgevb7fp2XIogNjof3KEd+3bJoGne/nw=="
+                }
             }
         },
         "@microsoft/sp-loader": {
@@ -1264,6 +1280,7 @@
                 "@microsoft/sp-module-interfaces": "1.4.1",
                 "@microsoft/sp-odata-types": "1.4.1",
                 "@microsoft/sp-polyfills": "1.4.1",
+                "@types/es6-promise": "0.0.33",
                 "@types/react": "15.6.6",
                 "@types/react-dom": "15.5.6",
                 "@types/requirejs": "2.1.29",
@@ -1274,6 +1291,11 @@
                 "requirejs": "2.1.20"
             },
             "dependencies": {
+                "@types/es6-promise": {
+                    "version": "0.0.33",
+                    "resolved": "https://registry.npmjs.org/@types/es6-promise/-/es6-promise-0.0.33.tgz",
+                    "integrity": "sha512-HKJFVLCGrWQ/1unEw8JdaTxu6n3EUxmwTxJ6D0O1x0gD8joCsgoTWxEgevb7fp2XIogNjof3KEd+3bJoGne/nw=="
+                },
                 "@types/react": {
                     "version": "15.6.6",
                     "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",
@@ -1380,8 +1402,16 @@
                 "@microsoft/sp-http": "1.4.1",
                 "@microsoft/sp-lodash-subset": "1.4.1",
                 "@microsoft/sp-odata-types": "1.4.1",
+                "@types/es6-promise": "0.0.33",
                 "@types/webpack-env": "1.13.1",
                 "tslib": "~1.8.0"
+            },
+            "dependencies": {
+                "@types/es6-promise": {
+                    "version": "0.0.33",
+                    "resolved": "https://registry.npmjs.org/@types/es6-promise/-/es6-promise-0.0.33.tgz",
+                    "integrity": "sha512-HKJFVLCGrWQ/1unEw8JdaTxu6n3EUxmwTxJ6D0O1x0gD8joCsgoTWxEgevb7fp2XIogNjof3KEd+3bJoGne/nw=="
+                }
             }
         },
         "@microsoft/sp-polyfills": {
@@ -1443,6 +1473,7 @@
                 "@microsoft/sp-lodash-subset": "1.4.1",
                 "@microsoft/sp-module-interfaces": "1.4.1",
                 "@microsoft/sp-page-context": "1.4.1",
+                "@types/es6-promise": "0.0.33",
                 "@types/react": "15.6.6",
                 "@types/react-dom": "15.5.6",
                 "@types/scrollreveal": "0.0.2",
@@ -1455,6 +1486,11 @@
                 "tslib": "~1.8.0"
             },
             "dependencies": {
+                "@types/es6-promise": {
+                    "version": "0.0.33",
+                    "resolved": "https://registry.npmjs.org/@types/es6-promise/-/es6-promise-0.0.33.tgz",
+                    "integrity": "sha512-HKJFVLCGrWQ/1unEw8JdaTxu6n3EUxmwTxJ6D0O1x0gD8joCsgoTWxEgevb7fp2XIogNjof3KEd+3bJoGne/nw=="
+                },
                 "@types/react": {
                     "version": "15.6.6",
                     "resolved": "https://registry.npmjs.org/@types/react/-/react-15.6.6.tgz",

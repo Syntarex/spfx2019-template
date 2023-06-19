@@ -1,20 +1,24 @@
 import { Text } from "office-ui-fabric-react";
 import * as React from "react";
+import { Idea } from "../../model/idea.model";
 import styles from "./idea-card.module.scss";
 
-export const IdeaCard = () => {
+interface IdeaCardProps {
+    idea: Idea;
+}
+
+export const IdeaCard = (props: IdeaCardProps) => {
+    // const expensiveClass = props.idea.volume > 1000 ? styles.expensive : undefined;
+
     return (
-        <div className={styles.card}>
+        <div className={styles.card + " " + (props.idea.volume > 1000 ? styles.expensive : undefined)}>
             <header>
-                <Text variant={"xLarge"}>Titel</Text>
+                <Text variant={"xLarge"}>{props.idea.Title}</Text>
             </header>
             <div>
-                <Text block>Lorem Ispum blablkjwelfk weölfkjwe löfkjwef</Text>
-                <Text block>300000€</Text>
+                <Text block>{props.idea.description}</Text>
+                <Text block>{props.idea.volume}€</Text>
             </div>
-            <footer>
-                <Text variant={"small"}>Erstellt von: Dominic Fuchs</Text>
-            </footer>
         </div>
     );
 };

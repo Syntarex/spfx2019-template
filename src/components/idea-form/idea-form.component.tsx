@@ -4,6 +4,7 @@ import { addIdea } from "../../data/idea.data";
 
 interface IdeaFormProps {
     userGotPermission: boolean;
+    onFinish: () => void;
 }
 
 // Dumb-Components -> Komponenten die selbst Daten nur erhalten aber nicht von einer API beziehen
@@ -31,7 +32,7 @@ export const IdeaForm = (props: IdeaFormProps) => {
             description: description,
             Title: title,
             volume: Number(volume),
-        });
+        }).then(() => props.onFinish());
     };
 
     return (

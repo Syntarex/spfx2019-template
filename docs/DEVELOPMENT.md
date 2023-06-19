@@ -23,7 +23,7 @@ React hat einen komponentenbasierten Ansatz und integriert sich sehr gut mit dem
 
 ### PnPJS
 
-TODO
+[`PnPJS`](https://pnp.github.io/pnpjs/v2) ist eine Open-Source Community-Bibliothek, welche Schnittstellen zum SharePoint bereitstellt. So ist es möglich auf Listen, Metadaten und Einstellungen zuzugreifen ohne selbst REST-Querys schreiben zu müssen. Die aktuellste Version für OnPrem-Systeme ist `2.14.0`. Version 3+ ist speziell für SharePoint Online entwickelt worden.
 
 ## Build-Chain
 

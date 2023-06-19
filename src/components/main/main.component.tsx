@@ -1,6 +1,6 @@
 import * as React from "react";
-import { HelloWorld } from "../hello-world/hello-world.component";
+import { IdeaCard } from "../idea-card/idea-card.component";
 
 export const Main = () => {
-    return <HelloWorld counterStartValue={1} buttonText={"zähl hoch yo"} />;
+    return <IdeaCard></IdeaCard>;
 };

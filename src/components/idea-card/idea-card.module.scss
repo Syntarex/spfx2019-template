@@ -1,0 +1,11 @@
+.card {
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.card > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

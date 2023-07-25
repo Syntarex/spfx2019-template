@@ -23,7 +23,7 @@
         "@microsoft/sp-webpart-base": "1.4.1",
         "@pnp/sp": "2.14.0",
         "lodash": "4.17.21",
-        "office-ui-fabric-react": "7.90.0",
+        "office-ui-fabric-react": "6.214.1",
         "react": "16.12.0",
         "react-dom": "16.12.0",
         "recoil": "^0.7.7"

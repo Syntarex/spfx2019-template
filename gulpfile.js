@@ -2,6 +2,7 @@
 
 const gulp = require("gulp");
 const build = require("@microsoft/sp-build-web");
+const path = require("path");
 
 build.addSuppression(/Warning - \[sass\] The local CSS class .* is not camelCase and will not be type-safe./gi);
 
@@ -15,6 +16,20 @@ build.configureWebpack.mergeConfig({
         generatedConfiguration.externals = generatedConfiguration.externals.filter(
             (name) => !["react", "react-dom"].includes(name),
         );
+
+        generatedConfiguration.module.rules.push({
+            test: /\.js$/,
+            include: [path.resolve(__dirname, "node_modules/recoil/es")],
+            use: {
+                loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-env"],
+                    plugins: ["babel-plugin-transform-object-rest-spread"],
+                    cacheDirectory: false,
+                },
+            },
+        });
+
         return generatedConfiguration;
     },
 });

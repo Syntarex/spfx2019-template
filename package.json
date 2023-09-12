@@ -29,6 +29,10 @@
         "recoil": "^0.7.7"
     },
     "devDependencies": {
+        "@babel/core": "^7.22.15",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/preset-env": "^7.22.15",
+        "@babel/preset-react": "^7.22.15",
         "@microsoft/sp-build-web": "1.4.1",
         "@microsoft/sp-module-interfaces": "1.4.1",
         "@microsoft/sp-webpart-workbench": "1.4.1",
@@ -37,6 +41,8 @@
         "@types/react": "16.9.19",
         "@types/react-dom": "16.9.0",
         "@types/webpack-env": "1.13.1",
+        "babel-loader": "8.3.0",
+        "babel-plugin-transform-object-rest-spread": "6.26.0",
         "gulp": "3.9.1",
         "gulp-cli": "2.3.0",
         "rimraf": "3.0.2",

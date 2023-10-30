@@ -25,6 +25,10 @@ React hat einen komponentenbasierten Ansatz und integriert sich sehr gut mit dem
 
 [`PnPJS`](https://pnp.github.io/pnpjs/v2) ist eine Open-Source Community-Bibliothek, welche Schnittstellen zum SharePoint bereitstellt. So ist es möglich auf Listen, Metadaten und Einstellungen zuzugreifen ohne selbst REST-Querys schreiben zu müssen. Die aktuellste Version für OnPrem-Systeme ist `2.14.0`. Version 3+ ist speziell für SharePoint Online entwickelt worden.
 
+### Yup
+
+[`yup`](https://github.com/jquense/yup) ist eine Bibliothek zur Validierung von Daten. Hiermit können zum Beispiel Formular-Daten oder Objekte, die von einer API stammen, auf ihre Form validiert werden. In OnPrem-Projekten ist die TypeScript-Version zu alt für die neueste Version von `yup`. Entsprechend wird hier eine festgezogene Version verwendet.
+
 ## Build-Chain
 
 **ACHTUNG:** Dieses Kapitel ist 100% optional und nicht notwendig um mit SharePoint Framework (SPFx) zu entwickeln.

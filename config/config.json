@@ -9,6 +9,14 @@
                     "manifest": "./src/webparts/example/example.manifest.json"
                 }
             ]
+        },
+        "example-extension": {
+            "components": [
+                {
+                    "entrypoint": "./lib/extensions/example/example.extension.js",
+                    "manifest": "./src/extensions/example/example.manifest.json"
+                }
+            ]
         }
     },
     "externals": {},

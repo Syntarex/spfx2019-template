@@ -25,11 +25,21 @@ $ git init
 
 ##### IDs ändern
 
-Jede Lösung und jeder WebPart muss eine eindeutige UUID besitzen.
+Jede Lösung muss eine eindeutige UUID besitzen.
+Diese findet man unter:
+
+-   `/config/package-solution.json`
+
+Jeder WebPart muss eine eindeutige UUID besitzen.
 Diese findet man unter:
 
 -   `/src/webparts/example.manifest.json`
--   `/config/package-solution.json`
+
+Jede Extension muss eine eindeutige UUID besitzen. Diese muss an mehreren Stellen geändert werden.
+
+-   `/src/webparts/example.manifest.json`
+-   `/sharepoint/assets/ClientSideInstance.xml`
+-   `/sharepoint/assets/elements.xml`
 
 ##### Installieren
 

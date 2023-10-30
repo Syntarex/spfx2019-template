@@ -26,7 +26,8 @@ Dies bringt einige Vorteile mit:
 -   Eine Änderung am Code hat eine sofortige Änderung am WebPart zur Folge
 -   Man befindet sich im SharePoint-Kontext und kann dessen Features nutzen
 
-Das Lösungspaket muss nur im App-Catalog der Site Collection hochgeladen und eingecheckt werden.
+Das Lösungspaket muss im App-Catalog hochgeladen und eingecheckt werden.
+Anschließend muss die App in jeder Site Collection, in welcher der/die WebPart/Extension verwendet werden soll, installiert werden.
 
 ## Produktive Bereitstellung
 
@@ -38,4 +39,5 @@ npm run ship
 
 In diesem Lösungspaket befindet sich alles für die produktive Nutzung.
 
-Das Lösungspaket muss nur im App-Catalog der Site Collection hochgeladen und eingecheckt werden.
+Das Lösungspaket muss im App-Catalog hochgeladen und eingecheckt werden.
+Anschließend muss die App in jeder Site Collection, in welcher der/die WebPart/Extension verwendet werden soll, installiert werden.

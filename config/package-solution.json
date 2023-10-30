@@ -5,7 +5,21 @@
         "id": "45d6bbd0-a98e-4642-aeaf-c88869d1515b",
         "version": "0.0.1.0",
         "includeClientSideAssets": true,
-        "skipFeatureDeployment": true
+        "skipFeatureDeployment": false,
+        "features": [
+            {
+                "title": "Application Extension - Deployment of custom action",
+                "description": "Deploys a custom action with ClientSideComponentId association",
+                "id": "6d910815-f89f-4b6e-80e6-882e5a47d4ba",
+                "version": "1.0.0.0",
+                "assets": {
+                    "elementManifests": [
+                        "elements.xml",
+                        "ClientSideInstance.xml"
+                    ]
+                }
+            }
+        ]
     },
     "paths": {
         "zippedPackage": "solution/spfx-2019-template.sppkg"

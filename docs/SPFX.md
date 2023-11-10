@@ -39,3 +39,8 @@ Der Aufbau des zurückgegebenen Objektes kann der Typisierung bzw. dem Beispiel 
 Als Controls zur Bearbeitung einzelner Werte, stellt das SharePoint Framework verschiedene Standards bereit. Diese können der [offiziellen Dokumentation](https://docs.microsoft.com/de-de/sharepoint/dev/spfx/web-parts/basics/integrate-with-property-pane) entnommen werden.
 
 Theoretisch können Controls auch selbst erstellt werden. Der Aufwand ist hierfür allerdings oft ungerechtfertigt hoch. Auch das komplette Panel kann selbst erstellt werden, hiervon wird allerdings stark abgeraten, da dann auch der komplette Daten-Flow selbst gesteuert werden muss.
+
+### Extension Properties
+
+Wird eine SPFx Extension in einer Site Collection installiert, wird eine User Custom Action für diese ausgerollt.
+Die Extension-Properties sind als die Properties der User Custom Action zu verstehen. Entsprechend können wir diese per [PowerShell und PnP PowerShell bearbeiten](https://pnp.github.io/powershell/cmdlets/Set-PnPApplicationCustomizer.html#examples).

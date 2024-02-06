@@ -3,7 +3,7 @@
     <CustomAction
         Title="example"
         Location="ClientSideExtension.ApplicationCustomizer"
-        ClientSideComponentId="2b22c4f9-51bc-4c08-8835-e530d99c332a"
+        ClientSideComponentId="82995655-e455-46b3-8143-cc80100fbe45"
         ClientSideComponentProperties="{}">
     </CustomAction>
 </Elements>

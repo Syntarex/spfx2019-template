@@ -22,6 +22,7 @@
         "@microsoft/sp-office-ui-fabric-core": "1.4.1",
         "@microsoft/sp-webpart-base": "1.4.1",
         "@pnp/sp": "2.14.0",
+        "datagrid-extension": "^2.2.10",
         "insert-css": "2.0.0",
         "lodash": "4.17.21",
         "office-ui-fabric-react": "6.214.1",

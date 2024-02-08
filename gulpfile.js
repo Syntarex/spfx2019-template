@@ -22,7 +22,10 @@ build.configureWebpack.mergeConfig({
 
         generatedConfiguration.module.rules.push({
             test: /\.js$/,
-            include: [path.resolve(__dirname, "node_modules/recoil/es")],
+            include: [
+                path.resolve(__dirname, "node_modules/recoil/es"),
+                path.resolve(__dirname, "node_modules/datagrid-extension"),
+            ],
             use: {
                 loader: "babel-loader",
                 options: {

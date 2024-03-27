@@ -23,8 +23,8 @@ build.configureWebpack.mergeConfig({
         generatedConfiguration.module.rules.push({
             test: /\.js$/,
             include: [
-                path.resolve(__dirname, "node_modules/recoil/es"),
-                path.resolve(__dirname, "node_modules/datagrid-extension"),
+                path.resolve(__dirname, "node_modules/.pnpm/recoil@0.7.7_react-dom@16.12.0_react@16.12.0/node_modules/recoil/es"),
+                path.resolve(__dirname, "node_modules/.pnpm/datagrid-extension@2.6.0/node_modules/datagrid-extension/lib"),
             ],
             use: [
                 {

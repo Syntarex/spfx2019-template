@@ -26,14 +26,22 @@ build.configureWebpack.mergeConfig({
                 path.resolve(__dirname, "node_modules/recoil/es"),
                 path.resolve(__dirname, "node_modules/datagrid-extension"),
             ],
-            use: {
-                loader: "babel-loader",
-                options: {
-                    presets: ["@babel/preset-env"],
-                    plugins: ["babel-plugin-transform-object-rest-spread"],
-                    cacheDirectory: false,
+            use: [
+                {
+                    loader: 'thread-loader',
+                    options: {
+                        workers: require('os').cpus().length - 1,
+                    },
                 },
-            },
+                {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"],
+                        plugins: [],
+                        cacheDirectory: true,
+                    },
+                }
+            ],
         });
 
         return generatedConfiguration;

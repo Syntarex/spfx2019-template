@@ -2,7 +2,7 @@
 
 ## Vorbereitungen
 
-1. Installiere [Node v8](https://nodejs.org/en/blog/release/v8.17.0)
+1. Installiere [pnpm](https://pnpm.io/installation)
 2. Installiere [Python 2](https://www.python.org/downloads/windows)
 3. Installiere [Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -38,13 +38,12 @@ Diese findet man unter:
 Jede Extension muss eine eindeutige UUID besitzen. Diese muss an mehreren Stellen geändert werden.
 
 -   `/src/webparts/example.manifest.json`
--   `/sharepoint/assets/ClientSideInstance.xml`
 -   `/sharepoint/assets/elements.xml`
 
 ##### Installieren
 
-1. Installiere alle Projekt-Abhängigkeiten: `npm install`
-2. Erstelle SSL-Zertifikat: `npm run trust-dev-cert`
+1. Installiere alle Projekt-Abhängigkeiten: `pnpm install`
+2. Erstelle SSL-Zertifikat: `pnpm run trust-dev-cert`
 
 ## Scripts
 
@@ -55,7 +54,7 @@ Die folgenden Skripte können im Terminal ausgeführt werden.
 Nutzt die SPFx Buildchain um TypeScript- und SCSS-Code zu kompilieren.
 
 ```
-npm run build
+pnpm run build
 ```
 
 ### ship
@@ -63,7 +62,7 @@ npm run build
 Nutzt die SPFx Buildchain um TypeScript- und SCSS-Code optimiert zu kompilieren und führt alle Projekt-Assets zu einer bereitstellbaren SharePoint-Lösung zusammen.
 
 ```
-npm run ship
+pnpm run ship
 ```
 
 ### clean
@@ -71,7 +70,7 @@ npm run ship
 Löscht cache- und alte build-Dateien.
 
 ```
-npm run clean
+pnpm run clean
 ```
 
 ### serve
@@ -79,7 +78,7 @@ npm run clean
 Startet einen Test-Server und ein bereitstellbares Lösungspaket, welches auf den Test-Server zeigt.
 
 ```
-npm run serve
+pnpm run serve
 ```
 
 ## Projektstruktur
